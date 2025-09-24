@@ -255,10 +255,14 @@ a {
 #restaurant-info{
     background-color: #f4f4f4;
     width: 30rem;
-    height: 20rem;
+    height: 24rem;
     padding: 1.5rem;
     margin: 5rem;
     border-radius: 20px;
+}
+
+#restaurant-info p{
+    padding-top: 10px;
 }
 
 .info-title{
@@ -273,6 +277,53 @@ a {
 i{
     font-size: 19px;
     height: 5px;
+    padding-right: 1.8em;
     width: 5px;
 }
 
+#tijdeninfo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.openingsuren {
+   margin: 0;
+}
+
+.openingsuren p{
+    padding-top: 10px;
+}
+
+#openingstijden-image{
+    height: 30em;
+    width: auto;
+    border-radius: 10px;
+}
+
+#info-wrapper{
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 5rem;
+}
+
+#cta-openingsinfo{
+    float: left;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    text-align: center;
+    flex-direction: column;
+}
+
+.cta-button{
+    width: 8rem;
+    height: 2.8rem;
+    border-radius: 12px;
+    border: none;
+    margin-top: 1rem;
+    font-size: 20px;
+    margin: 2.7rem;
+}
+
+/* footer*/
