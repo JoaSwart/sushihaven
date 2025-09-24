@@ -327,3 +327,37 @@ i{
 }
 
 /* footer*/
+
+#footer-content{
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+}
+
+#logogroot-img{
+    width: 15em;
+    height: auto;
+    margin-left: 3.4em;
+}
+
+#logo-footer{
+    width: 22em;
+    margin: 25px;
+}
+
+#logo-footer p{
+    margin-top: 0.8em;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+#socials-footer{
+width: 16rem;
+height: 9rem;
+}
+
+#locaties-footer{
+    width: 16rem;
+height: 9rem;
+}
