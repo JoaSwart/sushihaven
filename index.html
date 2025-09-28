@@ -6,12 +6,9 @@
     <title>Sushi Haven</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=B612:ital,wght@0,400;0,700;1,400;1,700&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=B612:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -21,16 +18,20 @@
             <a href="#" class="logo">
                 <img src="images/sushihavenlogosmall.png" alt="Sushi Haven Logo">
             </a>
+            
             <div class="navbar-rechts">
-            <ul class="nav-menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Locations</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <a href="#" class="button">Bestellen</a>
-        </div>
+                <ul class="nav-menu">
+                    <li><a href="#menu-pagina">Menu</a></li>
+                    <li><a href="#overons-pagina">About</a></li>
+                    <li><a href="#locatietijden-pagina">Locations</a></li>
+                    <li><a href="#contact-footer">Contact</a></li>
+                </ul>
+                <a href="#" class="button">Bestellen</a>
+            </div>
+
+            <button class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </nav>
     </header>
 
@@ -40,124 +41,126 @@
             <h1>Sushi haven</h1>
             <p>Lunch & Diner</p>
             <div class="reserveren">
-            <a href="#" class="button hero-button">Reserveren</a>
-        </div> 
+                <a href="#" class="button hero-button">Reserveren</a>
+            </div> 
         </div>
     </main>
 
-<!-- Menu pagina -->
+    <!-- Menu pagina -->
     <section id="menu-pagina">
-    <h1 class="titel-pagina" id="ons-menu">Ons Menu</h1>
-    <div id="wrapper">
-    <div class="menu-card">
-        <img src="images/dragon-roll.jpg">
-        <button class="menu-button">Sushi Rolls</button>
-        <div class="menu-text">
-        <p>California Roll - <span style="font-style: italic; color:#3d3d3d;" >$4,50</span></p>
-        <p>Spicy Tuna Roll - <span style="font-style: italic; color:#3d3d3d;" >$5,25</span></p>
-        <p>Dragon Roll - <span style="font-style: italic; color:#3d3d3d;" >$7,50</span></p>
+        <h1 class="titel-pagina" id="ons-menu">Ons Menu</h1>
+        <div id="wrapper">
+            <div class="menu-card">
+                <img src="images/dragon-roll.jpg" alt="Dragon Roll Sushi">
+                <button class="menu-button">Sushi Rolls</button>
+                <div class="menu-text">
+                    <p>California Roll - <span style="font-style: italic; color:#3d3d3d;" >$4,50</span></p>
+                    <p>Spicy Tuna Roll - <span style="font-style: italic; color:#3d3d3d;" >$5,25</span></p>
+                    <p>Dragon Roll - <span style="font-style: italic; color:#3d3d3d;" >$7,50</span></p>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="images/nigiri.jpg" alt="Nigiri Sushi">
+                <button class="menu-button">Nigiri</button>
+                <div class="menu-text">
+                    <p>Salmon Nigiri - <span style="font-style: italic; color:#3d3d3d;" >$2,25</span></p>
+                    <p>Tuna Nigiri - <span style="font-style: italic; color:#3d3d3d;" >$2,50</span></p>
+                    <p>Shrimp Nigiri - <span style="font-style: italic; color:#3d3d3d;" >$2,-</span></p>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="images/edamame.jpg" alt="Edamame appetizer">
+                <button class="menu-button">Appetizers</button>
+                <div class="menu-text">
+                    <p>Gyoza (6 pieces) - <span style="font-style: italic; color:#3d3d3d;" >$4,50</span></p> 
+                    <p>Edamame - <span style="font-style: italic; color:#3d3d3d;" >$3,50</span></p>
+                    <p>Miso Soup - <span style="font-style: italic; color:#3d3d3d;" >$2,75</span></p>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="menu-card">
-        <img src="images/nigiri.jpg">
-         <button class="menu-button">Nigiri</button>
-         <div class="menu-text">
-            <p>Salmon Nigiri - <span style="font-style: italic; color:#3d3d3d;" >$2,25</span></p>
-            <p>Tuna Nigiri - <span style="font-style: italic; color:#3d3d3d;" >$2,50</span></p>
-            <p>Shrimp Nigiri - <span style="font-style: italic; color:#3d3d3d;" >$2,-</span></p>
-         </div>
-    </div>
-    <div class="menu-card">
-        <img src="images/edamame.jpg">
-         <button class="menu-button">Appetizers</button>
-         <div class="menu-text">
-            <p>Gyoza (6 pieces) - <span style="font-style: italic; color:#3d3d3d;" >$4,50</span></p> 
-            <p>Edamame - <span style="font-style: italic; color:#3d3d3d;" >$3,50</span></p>
-            <p>Miso Soup - <span style="font-style: italic; color:#3d3d3d;" >$2,75</span></p>
-         </div>
-    </div>
-</div>
-<button class="button" id="full-menu">Full Menu</button>
-</section>
+        <button class="button" id="full-menu">Full Menu</button>
+    </section>
 
-<!--Over ons pagina-->
-<section id="overons-pagina">
-    <h1 id="overonsh1">Over Ons</h1>
-    <div id="overons-content">
-    <div id="overons-text">
-    <p>Bij Sushi Haven maken we sinds 1995 met veel passie authentieke Japanse gerechten. Onze chef-kok heeft meer dan 15 jaar in Tokyo gewerkt en zijn kennis en liefde voor sushi meegenomen naar ons restaurant. Dankzij zijn ervaring combineren we traditionele technieken met de beste, verse ingrediënten om onze gasten een bijzondere eetervaring te geven.</p>
-   <br>
-    <p>Elke dag zorgen we ervoor dat onze vis vers en van betrouwbare leveranciers komt. Met aandacht en zorg bereiden we elk gerecht, zodat je kunt genieten van de pure smaken en de eeuwenoude kunst van het sushi maken. Bij ons draait het niet alleen om eten, maar ook om sfeer en gastvrijheid – een plek waar je je meteen welkom voelt en samen kunt genieten van heerlijke Japanse gerechten.</p>
-</div>
-<div id="overons-imagediv">
-    <img id="overonsimage"src="images/overons-image.jpg">
-</div>
-</div>
-</section>
+    <!--Over ons pagina-->
+    <section id="overons-pagina">
+        <h1 id="overonsh1">Over Ons</h1>
+        <div id="overons-content">
+            <div id="overons-text">
+                <p>Bij Sushi Haven maken we sinds 1995 met veel passie authentieke Japanse gerechten. Onze chef-kok heeft meer dan 15 jaar in Tokyo gewerkt en zijn kennis en liefde voor sushi meegenomen naar ons restaurant. Dankzij zijn ervaring combineren we traditionele technieken met de beste, verse ingrediënten om onze gasten een bijzondere eetervaring te geven.</p>
+                <br>
+                <p>Elke dag zorgen we ervoor dat onze vis vers van betrouwbare leveranciers komt. Met aandacht en zorg bereiden we elk gerecht, zodat je kunt genieten van de pure smaken en de eeuwenoude kunst van het sushi maken. Bij ons draait het niet alleen om eten, maar ook om sfeer en gastvrijheid – een plek waar je je meteen welkom voelt en samen kunt genieten van heerlijke Japanse gerechten.</p>
+            </div>
+            <div id="overons-imagediv">
+                <img id="overonsimage" src="images/overons-image.jpg" alt="Sushi chef preparing food">
+            </div>
+        </div>
+    </section>
 
-<!-- Locaties & openingstijden-->
-<section id="locatietijden-pagina">
-    <h1 class="titel-pagina">Locatie & Openingstijden</h1>
-    <div id="info-wrapper">
-    <div id="restaurant-info">
-        <p class="info-title">Contact Info</p>
-        <br>
-        <div class="openingsuren">
-        <p style="padding-top: 0; !important"><i class="fas fa-house"></i>Keizersgracht 42, Amsterdam</p>
-        <p><i class="fas fa-phone"></i>020 914 23 55</p>
-        <p style="margin-bottom:10px;"><i class="fa-regular fa-envelope"></i>info@sushihaven.com</p>
+    <!-- Locaties & openingstijden-->
+    <section id="locatietijden-pagina">
+        <h1 class="titel-pagina">Locatie & Openingstijden</h1>
+        <div id="info-wrapper">
+            <div id="restaurant-info">
+                <p class="info-title">Contact Info</p>
+                <br>
+                <div class="openingsuren">
+                    <p style="padding-top: 0; !important"><i class="fas fa-house"></i>Keizersgracht 42, Amsterdam</p>
+                    <p><i class="fas fa-phone"></i>020 914 23 55</p>
+                    <p style="margin-bottom:10px;"><i class="fa-regular fa-envelope"></i>info@sushihaven.com</p>
+                </div>
+                <hr>
+                <p class="info-title" style="margin-bottom: 10px; margin-top: 7px;">Openingstijden</p>
+                <div id="tijdeninfo">
+                    <div class="openingsuren">
+                        <p>Maandag - Donderdag</p>
+                        <p>Vrijdag - Zaterdag</p>
+                        <p>Zondag</p>
+                    </div>
+                    <div class="openingsuren">
+                        <p>17:00 - 22:00</p>
+                        <p>17:00 - 23:00</p>
+                        <p>Gesloten</p>
+                    </div>
+                </div>
+            </div>
+            <div id="openingstijden-imgdiv">
+                <img id="openingstijden-image" src="images/openingstijden.png" alt="Opening times of the restaurant">
+            </div>
         </div>
-    <hr>
-        <p class="info-title" style="margin-bottom: 10px; margin-top: 7px;">Openingstijden</p>
-        <div id="tijdeninfo">
-        <div class="openingsuren">
-            <p>Maandag - Donderdag</p>
-            <p>Vrijdag - Zaterdag</p>
-            <p>Zondag</p>
+        <div id="cta-openingsinfo">
+            <p class="info-title">Maak een reservering</p>
+            <p>Reserveer een tafel voor een overgetelijke sushi ervaring</p>
+            <button class="cta-button button">Reserveren</button><button class="cta-button button">Bel Ons</button>
         </div>
-        <div class="openingsuren">
-            <p>17:00 - 22:00</p>
-            <p>17:00 - 23:00</p>
-            <p>Gesloten</p>
-        </div>
-        </div>
-    </div>
-    <div id="openingstijden-imgdiv">
-        <img id="openingstijden-image" src="images/openingstijden.png">
-    </div>
-    </div>
-    <div id="cta-openingsinfo">
-        <p class="info-title">Maak een reservering</p>
-        <p>Reserveer een tafel voor een overgetelijke sushi ervaring</p>
-        <button class="cta-button button">Reserveren</button><button class="cta-button button">Bel Ons</button>
-    </div>
-</section>
+    </section>
 
-<!--Footer -->
-<footer>
-<hr style="height: 3px; background-color: gray">
-<div id="footer-content">
-<div id="logo-footer">
-    <img id="logogroot-img" src="images/sushihavenlogogroot.png">
-    <p>Beleef authentiek Japans dineren in het hart van Amsterdam. Verse ingrediënten en traditionele technieken staan bij ons centraal.</p>
-</div>
-<div id="locaties-footer">
-    <p class="info-title" style="margin-bottom: 1em;">Links</p>
-    <a>Menu</a>
-    <br>
-    <a>Over Ons</a>
-    <br>
-    <a>Locaties & Openingstijden</a>
-    <br>
-    <a>Contact</a>
-</div>
-<div id="socials-footer">
-    <p class="info-title" style="margin-bottom: 0.8em; margin-left: 0.3em;">Volg ons!</p>
-    <i class="fa-brands fa-instagram"></i>
-    <i class="fa-brands fa-facebook"></i>
-    <i class="fa-brands fa-youtube"></i>
-</div>
-</div>
-</footer>
+    <!--Footer -->
+    <footer id="contact-footer">
+        <hr style="height: 3px; background-color: gray">
+        <div id="footer-content">
+            <div id="logo-footer">
+                <img id="logogroot-img" src="images/sushihavenlogogroot.png" alt="Sushi Haven Large Logo">
+                <p>Beleef authentiek Japans dineren in het hart van Amsterdam. Verse ingrediënten en traditionele technieken staan bij ons centraal.</p>
+            </div>
+            <div id="locaties-footer">
+                <p class="info-title" style="margin-bottom: 1em;">Links</p>
+                <a href="#menu-pagina">Menu</a>
+                <br>
+                <a href="#overons-pagina">Over Ons</a>
+                <br>
+                <a href="#locatietijden-pagina">Locaties & Openingstijden</a>
+                <br>
+                <a href="#contact-footer">Contact</a>
+            </div>
+            <div id="socials-footer">
+                <p class="info-title" style="margin-bottom: 0.8em; margin-left: 0.3em;">Volg ons!</p>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+        </div>
+    </footer>
+
+
 </body>
 </html>

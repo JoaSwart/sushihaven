@@ -1,22 +1,35 @@
-
 * {
     margin: 0;
     padding: 0;
-    
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: 'b612';
+    font-family: 'b612', sans-serif;
     line-height: 1.6;
     overflow-x: hidden;
     color: #333;
+}
+
+section[id] {
+    scroll-margin-top: 80px;
 }
 
 a {
     text-decoration: none;
     color: inherit;
 }
+
+.button:focus-visible, a:focus-visible {
+    outline: 2px solid #B31B1B;
+    outline-offset: 3px;
+    border-radius: 4px;
+}
+
 
 /* navbar */
 .main-header {
@@ -66,7 +79,6 @@ a {
     font-size: 1.1rem;
 }
 
-
 .button {
     background-color: #B31B1B;
     color: #ffffff;
@@ -76,6 +88,7 @@ a {
     display: inline-block;
     transition: background-color 0.3s ease, transform 0.2s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
 }
 
 .button:hover {
@@ -84,6 +97,14 @@ a {
     cursor: pointer;
 }
 
+.hamburger {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+}
 
 /* hero */
 .hero {
@@ -91,7 +112,6 @@ a {
     background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('images/sushihavenhero.jpg');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -101,7 +121,7 @@ a {
 
 .hero-content {
     max-width: 1700px;
-    height: 250px;
+    padding: 0 20px;
 }
 
 .hero-content h1 {
@@ -117,15 +137,16 @@ a {
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
+.reserveren {
+    margin-top: 40px;
+}
+
 .hero-button {
-    padding: 4px 7px; 
+    padding: 10px 20px;
     font-size: 1.5rem;
-    margin-top: 170px;
 }
 
 /*Menu pagina*/
-
-
 .titel-pagina{
     display: flex;
     justify-content: center;
@@ -135,15 +156,33 @@ a {
     text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.317); 
 }
 
+#wrapper{
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+    margin-bottom: 50px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .menu-card{
     background-color: #f4f4f4;
     border-radius: 30px;
-    margin: 30px;
     margin-top: 50px;
     height: 430px;
     width: 440px;
-    
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.menu-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
 
 .menu-card img{
     width: 320px;
@@ -179,17 +218,7 @@ a {
 
 .menu-text {
     margin-left: 1.5rem;
-    height: 50px;
     margin-top: 20px;
-}
-
-#wrapper{
-    width: 100vw;
-    float: left;
-    display: flex;
-    justify-content: space-between;
-    height: 500px;
-    margin-bottom: 50px;
 }
 
 #full-menu{
@@ -197,6 +226,7 @@ a {
     justify-content: center;
     align-items: center;
     margin: auto;
+    margin-top: 1rem;
     font-weight: bold;
     border: none;
     font-size: 23px;
@@ -207,7 +237,6 @@ a {
 }
 
 /* Over ons pagina*/
-
 #overons-pagina{
     background-image: url("images/overons-background.jpg");
     margin-top: 4rem;
@@ -222,12 +251,19 @@ a {
     text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.317); 
 }
 
+#overons-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10rem;
+    gap: 30px;
+}
+
 #overons-text{
-    height: 400px;
+    height: auto;
     width: 38rem;
     margin-top: 2.1rem;
     line-height: 1.8em;
-    overflow: auto;
 }
 
 #overons-imagediv{
@@ -236,21 +272,16 @@ a {
 }
 
 #overonsimage{
-    width: 30em;
+    width: 100%;
     margin-top: 4rem;
     height: auto;
     border-radius: 15px;
 }
 
-#overons-content{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100vw;
-    padding-right: 10rem;
-}
-
 /* Locatie & openingstijden*/
+#locatietijden-pagina {
+    padding: 20px;
+}
 
 #restaurant-info{
     background-color: #f4f4f4;
@@ -270,28 +301,16 @@ a {
     font-weight: bolder;
 }
 
-.info-text{
-    margin-left:20px;
-}
-
 i{
     font-size: 19px;
-    height: 5px;
     padding-right: 1.8em;
-    width: 5px;
+    width: 20px;
+    text-align: center;
 }
 
 #tijdeninfo{
     display: flex;
     justify-content: space-between;
-}
-
-.openingsuren {
-   margin: 0;
-}
-
-.openingsuren p{
-    padding-top: 10px;
 }
 
 #openingstijden-image{
@@ -305,15 +324,14 @@ i{
     justify-content: space-between;
     align-items: center;
     padding-right: 5rem;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 #cta-openingsinfo{
-    float: left;
     width: 100%;
-    height: 100%;
-    overflow: auto;
     text-align: center;
-    flex-direction: column;
+    padding: 40px 0;
 }
 
 .cta-button{
@@ -321,43 +339,177 @@ i{
     height: 2.8rem;
     border-radius: 12px;
     border: none;
-    margin-top: 1rem;
+    margin: 1rem;
     font-size: 20px;
-    margin: 2.7rem;
 }
 
 /* footer*/
+footer {
+    padding: 0 5%;
+}
+footer[id] {
+    scroll-margin-top: 0;
+}
 
 #footer-content{
-  display: flex;
+    display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: 100vw;
+    align-items: flex-start;
+    padding: 40px 0;
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 #logogroot-img{
     width: 15em;
     height: auto;
-    margin-left: 3.4em;
 }
 
 #logo-footer{
     width: 22em;
-    margin: 25px;
+    text-align: center;
 }
 
 #logo-footer p{
     margin-top: 0.8em;
     font-size: 0.8rem;
-    text-align: center;
 }
 
-#socials-footer{
-width: 16rem;
-height: 9rem;
+#locaties-footer a {
+    cursor: pointer;
+    line-height: 2;
 }
 
-#locaties-footer{
-    width: 16rem;
-height: 9rem;
+#socials-footer i {
+    font-size: 24px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#socials-footer i:hover {
+    color: #B31B1B;
+    transform: scale(1.15);
+}
+
+
+/* responsiveness */
+
+@media (max-width: 992px) {
+    
+    .hamburger { 
+        display: block; 
+    }
+
+    .navbar-rechts {
+        position: fixed; 
+        left: -100%; 
+        top: 71px; 
+        width: 100%; 
+        height: 100vh;
+        background-color: #ffffff; 
+        flex-direction: column; 
+        align-items: center;
+        padding-top: 40px; 
+        gap: 40px; 
+        transition: left 0.3s ease-in-out;
+    }
+
+    .navbar-rechts.active { 
+        left: 0; 
+    }
+
+    .nav-menu { 
+        flex-direction: column; 
+        align-items: center; 
+        gap: 40px; 
+        font-size: 1.5rem; 
+    }
+    
+    #overons-content, #info-wrapper, #footer-content {
+        flex-direction: column; 
+        align-items: center; 
+        padding-right: 0;
+    }
+
+    .hero-content h1 { font-size: 3.5rem; }
+    .hero-content p { font-size: 1.8rem; }
+
+    #wrapper {
+        flex-direction: column; align-items: center; height: auto;
+        gap: 40px; 
+        margin-bottom: 2rem;
+    }
+
+    .menu-card {
+        width: 90%; 
+        max-width: 440px; 
+        margin-top: 0; 
+        height: auto; 
+        padding-bottom: 20px;
+    }
+
+    #overons-pagina { 
+        padding: 3rem 1.5rem; 
+    }
+
+    #overons-text, #overons-imagediv { 
+        width: 100%; 
+        max-width: 38rem; 
+    }
+
+    #overonsimage { 
+        margin-top: 1rem; 
+    }
+
+    #info-wrapper { 
+        justify-content: center; 
+    }
+
+    #restaurant-info { 
+        margin: 1rem 0;
+     }
+    #openingstijden-imgdiv { 
+        display: none; 
+    }
+
+    #footer-content { 
+        text-align: center;
+     }
+    #socials-footer, #locaties-footer, #logo-footer { 
+        width: 100%; 
+        height: auto;
+     }
+
+    #socials-footer i { 
+        margin: 0 15px; 
+    }
+}
+
+@media (max-width: 576px) {
+    section[id] { 
+        scroll-margin-top: 75px; 
+    }
+    .hero-content h1 { 
+        font-size: 2.8rem;
+     }
+
+    .hero-content p { 
+        font-size: 1.5rem;
+     }
+    .titel-pagina, #overonsh1 { 
+        font-size: 2rem;
+     }
+    #cta-openingsinfo { 
+        display: flex; 
+        flex-direction: column;
+        align-items: center; 
+        gap: 1rem; 
+    }
+
+    .cta-button { 
+        margin: 0; 
+        width: 10rem;
+    }
 }
